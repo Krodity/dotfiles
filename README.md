@@ -9,7 +9,7 @@ Hyprland desktop on Arch: a custom Quickshell shell (`base`): island bar, launch
 | ![Launcher](screenshots/launcher.jpg) **Launcher**: tap Super. Apps + files under `~`. | ![Quick settings](screenshots/quicksettings.jpg) **Quick settings**: Wi-Fi, Bluetooth, night light, dark mode, Tailscale, volume, brightness. |
 | ![Dashboard](screenshots/dashboard.jpg) **Dashboard**: media card with a source picker, plus wallpaper and theme cards. | ![Theme](screenshots/theme.jpg) **Theme picker**: From wallpaper, Catppuccin, Nord, Gruvbox, Rosé Pine, Tokyo Night, Dracula, Everforest, or a custom palette. |
 | ![Wallpaper carousel](screenshots/carousel.jpg) **Wallpaper carousel**: `Super+Alt+W`. | ![Wallpaper picker](screenshots/wallpapers.jpg) **Wallpaper picker**: a grid with scaling modes. |
-| ![Settings](screenshots/settings.jpg) **Settings**: network, Bluetooth, display, sound, and live Hyprland tweaks (layout, gaps, rounding, blur). | |
+| ![Window overview](screenshots/overview.jpg) **Window overview**: `Super+Tab`. Live thumbnails by workspace, drag windows between workspaces, keyboard navigation. | ![Settings](screenshots/settings.jpg) **Settings**: network, Bluetooth, display, sound, and live Hyprland tweaks (layout, gaps, rounding, blur). |
 
 ## What's in here
 
