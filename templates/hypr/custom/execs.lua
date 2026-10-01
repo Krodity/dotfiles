@@ -1,0 +1,1 @@
+-- Your own autostart commands, e.g. hl.exec_cmd("...")

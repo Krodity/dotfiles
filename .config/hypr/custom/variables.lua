@@ -1,0 +1,1 @@
+-- Override defaults from hyprland/variables.lua here
