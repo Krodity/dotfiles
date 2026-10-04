@@ -111,6 +111,17 @@ json.dump(c, open(p, "w"), indent=2)
 open(p, "a").write("\n")
 PY
 
+# ── Personal palette stays frozen ────────────────────────────────────────────
+# matugen regenerates these from whatever wallpaper is set. A palette swap is personal
+# taste, not something to publish, so the repo keeps its committed copies. To publish a
+# deliberate change to one of them, commit it by hand.
+FROZEN=(hypr/hyprland/colors.lua hypr/hyprlock/colors.conf fuzzel/fuzzel_theme.ini
+        gtk-3.0/gtk.css gtk-4.0/gtk.css)
+for f in "${FROZEN[@]}"; do
+    git -C "$REPO" ls-files --error-unmatch ".config/$f" >/dev/null 2>&1 \
+        && git -C "$REPO" checkout HEAD -- ".config/$f"
+done
+
 # ── Safety net: fail loudly if anything personal survived ────────────────────
 LEAKS="$USER|"'100\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\.[0-9]+\.[0-9]+|192\.168\.|\.ts\.net|gh[opsu]_[A-Za-z0-9]{20,}|sk-[A-Za-z0-9]{20,}|@gmail\.com|krodity|KRDTY|\b[0-9a-f]{32}\b|~/bin/|~/Projects/'
 if grep -rnIE "$LEAKS" . ; then
